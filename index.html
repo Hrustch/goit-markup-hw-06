@@ -348,14 +348,14 @@
     <footer class="footer">
       <!-- Footer -->
       <div class="container footer_cont">
-        <div>
+        <div class="footer-cont-1">
           <a class="logo" href="./index.html"><span class="web">web</span><span class="studio_white">studio</span></a>
           <p class="footer_txt">
             Increase the flow of customers and<br> sales for your business with digital<br>
             marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-cont-2">
           <p class="s_m">Social media</p>
           <ul class="dark_social_media_lnk">
             <li>
@@ -388,10 +388,21 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe">
+          <div class="subscription">
+              <label for="sub">Subscribe</label>
+              <div class="subscription_form">
+                  <input type="email" id="sub" placeholder="E-mail">
+                  <button type="submit"><span>Subscribe <span><svg>
+                                  <use href="./images/icons.svg#icon-send"></use>
+                              </svg></span></span></button>
+              </div>
+          </div>
+      </form>
       </div>
     </footer>
 
-    <div class="overlay" data_modal>
+    <div class="overlay is_hidden" data_modal>
       <div class="modal">
           <button class="close" data_modal_close>
             <svg><use href="./images/icons.svg#icon-close" width="8" height="8"></use></svg>
@@ -420,9 +431,15 @@
             <textarea name="comment" id="comment" cols="30" rows="8" placeholder="Text input"></textarea>      
           </div>
           <div class="checkbox-content">
-            <input type="checkbox">
+            <label class="checkbox_label">
+              <input type="checkbox" class="checkbox">
+              <span class="checkbox_ico"></span>
+              I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
+            </label>
+            <!-- <input type="checkbox">
             <p>
-              I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a></p> 
+              I accept the terms and conditions of the&nbsp;<a href="#">Privacy Policy</a>
+            </p>  -->
           </div>
         <button type="submit"><span>Send</span></button>  
         </form>
